@@ -15,6 +15,7 @@ public:
 	void changePrix(int nv_prix);
 	void changeType(string nv_Type);
 	void changeId(int nv_id);
+	void affichage();
 
 private:
 	int id;

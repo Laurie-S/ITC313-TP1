@@ -29,3 +29,7 @@ void chambre::changeType(string nv_Type){
 void chambre::changeId(int nv_id){
 	id=nv_id;
 }
+
+void chambre::affichage(){
+	cout << "Identifiant : " << id <<endl << "Type : " << type << endl << "Prix : " << prix << endl ; 
+}
