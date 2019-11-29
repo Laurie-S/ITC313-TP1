@@ -18,7 +18,7 @@ int main(){
 		hotel1.addChambre("Suite", 210);
 	}
 
-	chambre chambre1 = hotel1.getChambre(3);
-	chambre1.affichage();
+	hotel1.affichage();
+	hotel1.affichageChambre();
 
 }

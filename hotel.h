@@ -19,6 +19,8 @@ class hotel {
 	string getNom();
 	string getVille();
 	int getTaille();
+	void affichage();
+	void affichageChambre();
 
 	private :
 	int id;

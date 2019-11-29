@@ -71,3 +71,17 @@ string hotel::getVille(){
 int hotel::getTaille(){
 	return Liste_Chambre.size();
 }
+
+void hotel::affichage(){
+	cout << "Information sur l'hotel" << endl;
+	cout << "Identifiant : " << id << endl << "Nom : " << nom << endl << "Ville : " << ville << endl << "Taille : " << Liste_Chambre.size() << endl ; 
+	cout << endl << endl ;
+}
+ void hotel::affichageChambre(){
+ 	cout << "liste des chambres de l'hotel" << endl;
+ 	for(int i =0;i<Liste_Chambre.size();i++){
+ 		chambre chambre1 = Liste_Chambre.at(i);
+ 		chambre1.affichage();
+ 	}
+ 	cout << endl << endl;
+ }
