@@ -12,7 +12,8 @@ class hotel {
 
 	public :
 	hotel(int id_ , string nom_, string ville_, int taille=0);
-	void addChambre(int nombre=1);
+	void addChambreUser(int nombre=1);
+	void addChambre(string type, int prix);
 	chambre getChambre(int nbr);
 	int getId();
 	string getNom();

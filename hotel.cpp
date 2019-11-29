@@ -25,7 +25,7 @@ hotel::hotel(int id_ , string nom_, string ville_, int taille){
 	}
 }
 
-void hotel::addChambre(int nombre){
+void hotel::addChambreUser(int nombre){
 	int taille = Liste_Chambre.size();
 	for(int i=1; i<=nombre; i++){
 		string type;
@@ -41,6 +41,16 @@ void hotel::addChambre(int nombre){
 
 	}
 }
+
+void hotel::addChambre(string type, int prix){
+	int taille = Liste_Chambre.size();
+
+
+	chambre chambre1 (taille+1, type, prix);
+	Liste_Chambre.push_back(chambre1);
+
+}
+
 
 chambre hotel::getChambre(int nbr){
 	return Liste_Chambre.at(nbr);
