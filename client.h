@@ -15,6 +15,7 @@ public:
 	int getNombreReservation();
 	void modifClient(int nv_id);
 	void addReserv();
+	void afficherInfo();
 
 private:
 	int id;

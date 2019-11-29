@@ -29,3 +29,9 @@ void client::modifClient(int nv_id){ // modifie l'id du client (seule chose qui 
 void client::addReserv(){	// ajoute 1 reservation au client
 	nb_reservation++;
 }
+
+void client::afficherInfo(){
+	cout << "Information Client " << endl << endl;
+	cout << "Identifiant : " << id << endl << "Nom : " << nom << endl << "Prenom : " << prenom << endl << "Nombre de Reservations : " << nb_reservation << endl;
+	cout << endl << endl; 
+}
